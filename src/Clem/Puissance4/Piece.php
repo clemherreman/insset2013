@@ -1,6 +1,6 @@
 <?php
 
-namespace Puissance4;
+namespace Clem\Puissance4;
 
 /**
  * Représente une pièce de puissance à jouer sur la grille.
@@ -27,7 +27,7 @@ class Piece
      *
      * @param string $couleur The Couleur.
      *
-     * @return \Puissance4\Piece
+     * @return \Clem\Puissance4\Piece
      */
     public function setCouleur($couleur)
     {

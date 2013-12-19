@@ -9,9 +9,4 @@
          stopOnFailure="false"
          syntaxCheck="false"
 >
-    <testsuites>
-        <testsuite name="unit">
-            <directory>./tests</directory>
-        </testsuite>
-    </testsuites>
 </phpunit>

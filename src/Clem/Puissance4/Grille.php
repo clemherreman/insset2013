@@ -1,6 +1,6 @@
 <?php
 
-namespace Puissance4;
+namespace Clem\Puissance4;
 
 /**
  * Représente la grille qui contiendra les Pièces.
@@ -35,7 +35,7 @@ class Grille
      *
      * @param array $tableau The Grille.
      *
-     * @return \Puissance4\Grille
+     * @return \Clem\Puissance4\Grille
      */
     public function setTableau($tableau)
     {
@@ -57,7 +57,7 @@ class Grille
     /**
      * Ajoute une pièce dans une des colonnes de la grille.
      *
-     * @param \Puissance4\Piece $piece         La pièce à ajouter.
+     * @param \Clem\Puissance4\Piece $piece         La pièce à ajouter.
      * @param int               $numeroColonne Le numéro de la colonne où ajouter la pièce (indexé à 0).
      *
      * @return bool TRUE si l'ajout à réussi, FALSE sinon.
@@ -103,8 +103,6 @@ class Grille
 
             $display = $display."|\n";
         }
-
-        $display .= "_________________\n";
 
         return $display;
     }
@@ -152,9 +150,5 @@ class Grille
                 return true;
             }
         }
-
-
-
-
     }
 }

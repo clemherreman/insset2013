@@ -1,6 +1,6 @@
 {
-    "name": "clemherreman/puissance4",
-    "description": "Sample application to learn testing",
+    "name": "clemherreman/insset2013",
+    "description": "Sample applications to learn testing",
     "require": {
         "phpunit/phpunit": "3.7"
     },
@@ -12,8 +12,8 @@
     ],
     "autoload": {
         "psr-0": {
-            "Puissance4\Test": "tests/",
-            "Puissance4": "src/"
+            "Clem\\Test": "tests/",
+            "Clem": "src/"
         }
     },
     "config": {
