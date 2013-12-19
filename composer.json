@@ -1,0 +1,22 @@
+{
+    "name": "clemherreman/puissance4",
+    "description": "Sample application to learn testing",
+    "require": {
+        "phpunit/phpunit": "3.7"
+    },
+    "authors": [
+        {
+            "name": "Clement Herreman",
+            "email": "clement.herreman@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Puissance4\Test": "tests/",
+            "Puissance4": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
