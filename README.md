@@ -9,7 +9,6 @@ Installation
 The recommended way to install this is to use [Composer](http://getcomposer.org/):
 
 ```bash
-$ curl -sS https://getcomposer.org/installer | php
 $ php composer.phar install
 ```
 
