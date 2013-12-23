@@ -31,9 +31,9 @@ class Score
      */
     public function getScoreColor()
     {
-//        if ($this->score === null) {
-//            return 'rgb(181,181,181)';
-//        }
+        if ($this->score === null) {
+            return 'rgb(181,181,181)';
+        }
 
         $b = 75;
         $g = -1;
