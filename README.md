@@ -1,4 +1,4 @@
-INSSET 2013 php2013@insset.fr
+INSSET 2013
 ==========
 
 This repository contains the material I'm using at INSSET, St-Quentin, France.
