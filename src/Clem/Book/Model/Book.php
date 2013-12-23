@@ -98,16 +98,22 @@ class Book
     public function __toString()
     {
         $template = <<<BOOK
-"%s" by %s.
+"%s" by '%s'.
 Extract:
     %s
 
 BOOK;
+        $template = '
+%s wrote "%s"
+Resume:
+    %s
+
+';
 
         return sprintf(
             $template,
-            $this->title,
             $this->author->getFirstname().' '.$this->author->getLastname(),
+            $this->title,
             $this->content
         );
     }
@@ -115,14 +121,12 @@ BOOK;
     /**
      * @return Book[]
      */
-    public static function getAll()
+    public static function getAll($database)
     {
-        $database = Database::getConnection();
-        $bookDatas = $database->query("SELECT *
-                                       FROM book, author
-                                       WHERE book.author_id = author.id");
-
-
+        $bookDatas = $database->query(
+            "SELECT *
+             FROM book, author
+             WHERE book.author_id = author.id");
         $books = array();
         foreach ($bookDatas as $data) {
             $author = new Author();
@@ -138,7 +142,6 @@ BOOK;
 
             $books[] = $book;
         }
-
         return $books;
     }
 }
